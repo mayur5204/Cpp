@@ -2,6 +2,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Complex",
+            "request": "launch",
+            "mainClass": "JAVA.Complex",
+            "projectName": "Cpp_db48cac"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "JAVA.Main",
+            "projectName": "Cpp_db48cac"
+        },
+        {
+            "type": "java",
+            "name": "Magazine",
+            "request": "launch",
+            "mainClass": "JAVA.Magazine",
+            "projectName": "Cpp_db48cac"
+        },
+        {
+            "type": "java",
             "name": "Magazine",
             "request": "launch",
             "mainClass": "Magazine",

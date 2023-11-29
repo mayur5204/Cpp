@@ -79,7 +79,7 @@ public static void main(String args[])
 	Magazine mag1=new Magazine("Forbes",300,200,1);
 	Magazine mag2=new Magazine ("National Geographic",250,400,1);
 	mag1.orderQty(100);
-	mag2.orderQty(30);
+	mag2.orderQty(100);
 	book1.getTotalSale();
 	book2.getTotalSale();
 	mag1.getTotalSale();
