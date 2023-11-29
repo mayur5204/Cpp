@@ -100,5 +100,6 @@
     "stdexcept": "cpp",
     "streambuf": "cpp",
     "typeinfo": "cpp"
-  }
+  },
+  "java.debug.settings.onBuildFailureProceed": true
 }
