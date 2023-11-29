@@ -1,3 +1,4 @@
+package JAVA;
 
 public class Publication {
 	String title;
