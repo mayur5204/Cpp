@@ -12,20 +12,41 @@ public class ExceptionHandling
 
     public void Division()
     {
-        
+         Scanner sc=new Scanner(System.in);
         try {
 
-            Scanner sc=new Scanner(System.in);
+           
             System.out.println("Enter the numerator : ");
             num1=sc.nextLine();
+            float number1=Float.parseFloat(num1);
             System.out.println("Enter the denominator : ");
             num2=sc.nextLine();
-            int number1=Integer.parseInt(num1);
             int number2=Integer.parseInt(num2);
-            sc.close();
-        
+            
+            if (number2==0)
+            {
+                throw new ArithmeticException("Denominator cannot be zero!");
+            }
+            else
+            {
+                float res=(number1/number2);
+                 System.out.println("Division : "+(res));
 
-        System.out.println("Division : "+(number1/number2));
+                System.out.println("Enter the size of the array :");
+                int size=sc.nextInt();
+                System.out.println("Enter the index at which you want to add data : ");
+                int index=sc.nextInt();
+                System.out.println("Enter the data you want to add : ");
+                int data =sc.nextInt();
+
+                int[] array=new int[size];
+                array[index]=data;
+
+       
+
+            }
+           
+        
         }
          catch(ArithmeticException e)
         {
@@ -37,6 +58,13 @@ public class ExceptionHandling
             System.out.println("Number format exception occured!");
             System.out.println("Please provide proper input.");
         
+        }
+        catch(ArrayIndexOutOfBoundsException e)
+        {
+            System.out.println("Array out of bound exception occured!");
+        }
+        finally
+        {sc.close();
         }
        
         }
