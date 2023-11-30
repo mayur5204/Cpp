@@ -4,8 +4,6 @@
 //  abstract function and redefine this function in the derived class to suit their requirements. 
 // Write a program that accepts dimensions of triangle/rectangle and display calculated area.
 //  Implement dynamic binding for given case study.
-
-package JAVA;
 import java.util.Scanner;
 
 
@@ -31,25 +29,51 @@ class Triangle extends Shape
         dim1=sc.nextDouble();
         System.out.println("Enter the height of the triangle : ");
         dim2=sc.nextDouble();
-        sc.close();
     }
 
     @Override
     protected double compute_area()
     {
-        return (dim1*dim2)/2;
+        return 0.5*dim1*dim2;
     
     }
    
 }
 
-public class Main{
+class Rectangle extends Shape
+{
+    @Override
+    void input_data()
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the length of the rectangle : ");
+        dim1=sc.nextDouble();
+        System.out.println("Enter the width of the rectangle : ");
+        dim2=sc.nextDouble();
+        sc.close();
+    }
+
+    @Override
+    double compute_area()
+    {
+        return dim1*dim2;
+    }
+
+}
+
+public class Shapes{
       public static void main(String args[])
     {
         Shape shape;
         shape =new Triangle();
         shape.input_data();
-        shape.compute_area();
+    
+        System.out.println("Area of Triangle : "+shape.compute_area());
+        Shape shape2;
+        shape2 =new Rectangle();
+        shape2.input_data();
+        shape2.compute_area();
+        System.out.println("Area of Rectangle : "+ shape2.compute_area());
     }
 }
    
