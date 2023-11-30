@@ -73,7 +73,7 @@ public class Shapes{
         shape2 =new Rectangle();
         shape2.input_data();
         shape2.compute_area();
-        System.out.println("Area of Rectangle : "+ shape2.compute_area());
+        System.out.println("Area of Rectangle : "+shape2.compute_area());
     }
 }
    
