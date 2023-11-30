@@ -23,6 +23,8 @@ class Triangle extends Shape
         dim1=sc.nextDouble();
         System.out.println("Enter the height of the triangle : ");
         dim2=sc.nextDouble();
+        
+
     }
 
     @Override
