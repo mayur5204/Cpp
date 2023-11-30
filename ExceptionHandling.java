@@ -1,8 +1,4 @@
-// Implement a program to handle Arithmetic exception, Array Index Out Of Bounds. 
-// The user enters two numbers Num1 and Num2. The division of Num1 and Num2 is displayed. 
-// If Num1 and Num2 were not integers, the program would throw a Number Format Exception.
-//  If Num2 were zero, the program would throw an Arithmetic Exception.
-//  Display the exception.
+
 
 
 import java.util.Scanner;
@@ -10,7 +6,7 @@ public class ExceptionHandling
 {
     String num1,num2;
 
-    public void Division()
+    public void ExceptionHandlingexm()
     {
          Scanner sc=new Scanner(System.in);
         try {
@@ -74,7 +70,7 @@ public class ExceptionHandling
     public static void main(String args[])
     {
         ExceptionHandling e=new ExceptionHandling();
-        e.Division();
+        e.ExceptionHandlingexm();
        
     }
 
